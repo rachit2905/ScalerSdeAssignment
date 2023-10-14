@@ -1,0 +1,139 @@
+:root {
+  --font-family: 'Inter', Arial, sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  /* Increased font weight for bold text */
+  --line-height: 1.6;
+  --text-color: #333;
+  --page-background-color: #f8f8f8;
+}
+
+/* Global Styles */
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height);
+  color: var(--text-color);
+  background-color: var(--page-background-color);
+  transition: background-color 0.3s;
+}
+
+body:hover {
+  background-color: #f5f5f5;
+}
+
+/* Links */
+a {
+  font-weight: var(--font-weight-bold);
+  color: #007BFF;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #0056B3;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: var(--text-color);
+  transition: color 0.3s;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-weight: var(--font-weight-bold);
+  /* Increased font weight for headings */
+}
+
+h1:hover {
+  color: #007BFF;
+}
+
+/* Buttons (Enhanced with Hover Effects) */
+button {
+  border: none;
+  border-radius: 6px;
+  padding: 0.5em 1.5em;
+  font-size: 1rem;
+  font-weight: var(--font-weight-bold);
+  background-color: #007BFF;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+button:hover {
+  background-color: #0056B3;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+}
+
+/* Table Styles */
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-weight: var(--font-weight-normal);
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: var(--font-weight-normal);
+}
+
+.table th {
+  background-color: #f8f9fa;
+  color: #212529;
+  border-bottom: 2px solid #dee2e6;
+  font-weight: var(--font-weight-bold);
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tr:hover {
+  background-color: #e2e6ea;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
