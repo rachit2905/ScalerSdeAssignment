@@ -12,7 +12,7 @@ import {
   Typography,
   Paper,
 } from "@mui/material";
-import "../StudentDataTable.css";
+import "../Styles/StudentDataTable.css";
 import FetchSelectedStudents from "./FetchSelectedStudents";
 
 const StudentDataTable = () => {
